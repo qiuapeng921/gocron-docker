@@ -8,8 +8,8 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 WORKDIR /app
 
-RUN wget https://github.com/ouqiang/gocron/releases/download/v1.5.3/gocron-v1.5.3-linux-amd64.tar.gz \
-	&& tar -zxvf gocron-v1.5.3-linux-amd64.tar.gz && rm -rf go1.15.7.linux-amd64.tar.gz \
+RUN wget https://github.com/ouqiang/gocron/releases/download/v1.5.2/gocron-v1.5.1-linux-amd64.tar.gz \
+	&& tar -zxvf gocron-v1.5.1-linux-amd64.tar.gz && rm -rf gocron-v1.5.1-linux-amd64.tar.gz \
 	&& mv gocron-linux-amd64/gocron /app && rm -rf gocron-linux-amd64
 
 RUN chown -R app:app ./
